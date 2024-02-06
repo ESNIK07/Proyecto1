@@ -1,6 +1,11 @@
 <html>
 <h1>Hola mundo!!!</h1>
 <h2>Primera Plantilla de {{name_person.title}} {{last_name_person.title}}</h2>
+{% if name_person.title == 'ING Juan'  %}
+    <p>el curso lo imparte el profesor titular</p>
+{% else %}
+    <p>el curso no lo imparte el profesor titular</p>
+{% endif %}
 <p>Momento Actual {{date_now}}</p>
 {% if temas_course %}
 <h2>Temas Course</h2>

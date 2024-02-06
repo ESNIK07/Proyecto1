@@ -18,7 +18,7 @@ class Person(object):
 
 def saludo(request):
     # Trayendo Plantilla html de manera poco optima pero funcional
-    p1 = Person("ING Juan", "Agudelo")
+    p1 = Person("Juan", "Agudelo")
     # name = "Juan"
     # last_name = "Agudelo"
     temas = ["Plantillas", "Modelos", "Formularios", "Vistas", "Despliegue"]
