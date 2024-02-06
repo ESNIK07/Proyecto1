@@ -1,0 +1,22 @@
+<html>
+<h1>Hola mundo!!!</h1>
+<h2>Primera Plantilla de {{name_person.title}} {{last_name_person.title}}</h2>
+<p>Momento Actual {{date_now}}</p>
+{% if temas_course %}
+<h2>Temas Course</h2>
+<p>
+    <ul>
+    
+    {% for tema in temas_course %}
+
+    <li>{{tema}}</li>
+
+    {% endfor %}
+    
+    </ul>
+</p>
+{% else %}
+<h2>No Hay Temas</h2>
+
+{% endif %}
+</html>
