@@ -1,4 +1,6 @@
 <html>
+<!-- aqui ira una plantilla incrustada -->
+{% include "super/header.html" %}
 <h1>Hola mundo!!!</h1>
 <h2>Primera Plantilla de {{name_person.title}} {{last_name_person.title}}</h2>
 {% if name_person.title == 'ING Juan'  %}
@@ -25,3 +27,10 @@
 
 {% endif %}
 </html>
+{# Comentario de una linea #}
+{% comment %}
+    Comentario
+    de 
+    varias
+    lineas
+{% endcomment %}
